@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='aaaarg-python',
-      version='0.1',
+      version='0.11',
       description='Python interface for aaaarg',
       url='http://github.com/metadada/aaaarg-python',
       author='metadada',

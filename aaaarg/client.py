@@ -41,10 +41,10 @@ class Client:
     edit_text_path = '/thing/<id>/edit'
     
     def __init__(self, base_url=False, username=False, password=False):
-        self.base_url = base_url.strip("/")
         self.session = requests.session()
         if base_url:
             self.base_url = base_url
+        self.base_url = self.base_url.strip("/")
         if username and password:
             self.authenticate(username, password)
 
