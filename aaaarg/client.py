@@ -1,4 +1,6 @@
 # -*- coding: UTF-8 -*-
+from __future__ import print_function
+
 import sys
 import os
 import requests
@@ -315,7 +317,7 @@ class Client:
 
 
 if __name__ == '__main__':
-    print """
+    print("""
 USAGE
 =====
 import aaaarg
@@ -359,4 +361,4 @@ c.update_text(id, title='', authors=[], short_description='', long_description='
 
 # Add a file to a text
 c.add_file_to_text(file_location, text_id)
-    """
+    """)
